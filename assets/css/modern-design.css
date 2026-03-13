@@ -292,3 +292,7 @@ h1, h2, h3, h4, .font-heading {
 @keyframes shine {
   to { background-position-x: -200%; }
 }
+
+.footer-v2 .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
