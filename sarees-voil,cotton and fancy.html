@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarees-voil,cotton and fancy- Seker Textiles</title>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif; /* Use Roboto font */
+            background-color: #f8f9fa; /* Light background for a premium feel */
+            color: #333; /* Dark text for readability */
+        }
+
+        h2 {
+            font-size: 2.5rem; /* Larger heading for emphasis */
+            color: #007bff; /* Primary color for headings */
+            margin-bottom: 20px; /* Space below headings */
+        }
+
+        .card {
+            border: none; /* Remove default card border */
+            border-radius: 10px; /* Rounded corners for a softer look */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+            
+        }
+
+        .card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+        .card-img-top {
+            height: 250px; /* Fixed height for images */
+            object-fit: cover; /* Cover the area without distortion */
+            border-top-left-radius: 10px; /* Match card border radius */
+            border-top-right-radius: 10px; /* Match card border radius */
+        }
+
+        .card-title {
+            font-size: 1.25rem; /* Slightly larger title */
+            font-weight: bold; /* Bold title for emphasis */
+        }
+
+        .card-text {
+            font-size: 0.9rem; /* Smaller description text */
+            color: #666; /* Lighter color for description */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Primary button color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded button corners */
+            padding: 10px 20px; /* Button padding */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .card {
+                margin-bottom: 20px; /* Space between cards on smaller screens */
+            }
+        }
+    </style>
+    <!-- Add any other stylesheets you need -->
+</head>
+<body class="index-page">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 24px; font-weight: bold; color: #007bff;">
+                Seker Textiles
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="floorguide.html">Floor Guide</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="womenDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Women
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="womenDropdown" style="min-width: 250px;">
+                            <li><a class="dropdown-item" href="Blouse.html">Blouse</a></li>
+                            <li><a class="dropdown-item" href="Inner Wear.html">Inner wear</a></li>
+                            <li><a class="dropdown-item" href="sarees.html">Sarees</a></li>
+                            <li><a class="dropdown-item" href="sarees-voil,cotton and fancy.html">Sarees-voil, cotton&Fancy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Men
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menDropdown" style="min-width: 200px;">
+                            <li><a class="dropdown-item" href="lungi,shuting,inner.html">Lungies & Towels</a></li>
+                            <li><a class="dropdown-item" href="Mens Readymades.html">Mens Readymades</a></li>
+                            <li><a class="dropdown-item" href="dhotiandshirts.html">Dhotis & Shirts</a></li>
+                            <li><a class="dropdown-item" href="shirts.html">Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kidsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kids
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="kidsDropdown" style="min-width: 200px;">
+                            <li>
+                                <a class="dropdown-item" href="Boys Readymades.html">Boys Readymades</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="Girls Readymades.html">Girls Readymades</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Switch Shop
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="shopDropdown" style="min-width: 100px;">
+                            <li><a class="dropdown-item" href="shop1.html">Seker Textiles</a></li>
+                            <li><a class="dropdown-item" href="shop2.html">Sekers Textiles</a></li>
+                        </ul>
+                    </li>
+                </ul>
+    <!-- Social Media Icons -->
+    <!-- <div class="social-icons ms-auto d-flex align-items-center">
+        <a href="https://www.facebook.com/profile.php?id=61553748237223" class="social-icon me-3" target="_blank">
+            <i class="fa fa-facebook fa-lg"></i>
+        </a>
+        <a href="https://www.instagram.com/sekertextiles/" class="social-icon me-3" target="_blank">
+            <i class="fa fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://twitter.com/STextiles57998" class="social-icon me-3" target="_blank">
+            <i class="fa fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/@sekertextiles" class="social-icon me-3" target="_blank">
+            <i class="fa fa-youtube fa-lg"></i>
+        </a>
+    </div> -->
+    
+    <style>
+    .social-icons a.social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: #007bff;
+        transition: all 0.3s ease;
+    }
+    
+    .social-icons a.social-icon:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+    }
+    
+    .social-icons a.social-icon i {
+        color: white;
+    }
+    </style>
+    
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+    .navbar {
+        padding: 15px 0;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-brand {
+        font-family: 'Roboto', sans-serif;
+        transition: color 0.3s ease;
+    }
+    
+    .navbar-brand:hover {
+        color: #0056b3 !important;
+    }
+    
+    .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+        padding: 8px 15px !important;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        color: #007bff !important;
+        background-color: rgba(0, 123, 255, 0.1);
+    }
+    
+    .nav-link.active {
+        color: #007bff !important;
+        background-color: rgba(0, 123, 255, 0.1);
+    }
+    
+    /* Mobile view adjustments */
+    @media (max-width: 991px) {
+        .navbar-nav {
+            padding: 20px 0;
+        }
+        
+        .nav-link {
+            padding: 10px 15px !important;
+            margin: 5px 0;
+        }
+        
+        .navbar-collapse {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-top: 10px;
+        }
+    }
+    
+    /* Add padding to body to prevent content from hiding under fixed navbar */
+    body {
+        padding-top: 80px;
+    }
+    </style>
+       
+            <main class="main">
+        <div class="container">
+            <h2 class="text-center my-4">SAREES - COTTON / FANCY </h2>
+            <div class="row">
+                <!-- Sample Product Cards -->
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="./seker textiles img/WOMENS/sarees-voil,cotton and fancy/img 1.jpg" class="card-img-top" alt="Product Name 1" >
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="./seker textiles img/WOMENS/sarees-voil,cotton and fancy/img 2.jpg" class="card-img-top" alt="Product Name 2">
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="./seker textiles img/WOMENS/sarees-voil,cotton and fancy/img 3.jpg" class="card-img-top" alt="Product Name 3">
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="./seker textiles img/WOMENS/sarees-voil,cotton and fancy/img 4.jpg" class="card-img-top" alt="Product Name 4">
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card">
+                        <img src="./seker textiles img/WOMENS/sarees-voil,cotton and fancy/img 5.jpg" class="card-img-top" alt="Product Name 1">
+                    </div>
+                </div>
+                <!-- Repeat for more products (total 20) -->
+                <!-- Example for additional products -->
+                
+                <!-- Continue adding more product cards up to 20 -->
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <!-- Footer content -->
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="modalImage" class="img-fluid" alt="Enlarged Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

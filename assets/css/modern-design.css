@@ -1,0 +1,294 @@
+/* 
+  Seker Textiles - Modern 2025-2026 Design System
+  Colors: Maroon (#800000), Gold (#D4AF37), Off-White (#FDFDFD)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #800000; /* Maroon */
+  --accent: #D4AF37;  /* Gold */
+  --bg-light: #FDFDFD;
+  --text-dark: #1A1A1A;
+  --text-muted: #666666;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  padding-top: 0 !important; /* Managed by sticky header */
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* --- Scroll Progress --- */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background: var(--accent);
+  z-index: 9999;
+}
+
+/* --- Modern Navbar --- */
+.modern-nav {
+  background: transparent;
+  backdrop-filter: blur(0px);
+  transition: var(--transition);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.modern-nav.scrolled {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  padding: 12px 0;
+  box-shadow: var(--shadow-sm);
+  border-bottom: 2px solid var(--accent);
+}
+
+.modern-nav .navbar-brand {
+  font-size: 1.8rem;
+  letter-spacing: -1px;
+}
+
+.modern-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin: 0 12px;
+  position: relative;
+  transition: var(--transition);
+}
+
+.modern-nav.scrolled .nav-link {
+  color: var(--text-dark);
+}
+
+.modern-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: var(--transition);
+}
+
+.modern-nav .nav-link:hover::after,
+.modern-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.modern-nav .nav-link:hover {
+  color: var(--accent);
+}
+
+/* --- Hero Section --- */
+.hero-v2 {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(128,0,0,0.6));
+  z-index: -1;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-title { font-size: 2.5rem; }
+}
+
+.btn-modern-gold {
+  background: var(--accent);
+  color: #fff;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: var(--transition);
+}
+
+.btn-modern-gold:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+  background: #c19b2e;
+  color: #fff;
+}
+
+/* --- Product Cards --- */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition);
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-img-wrapper {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.product-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.badge-offer {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* --- Section Styling --- */
+.section-padding { padding: 100px 0; }
+.bg-subtle { background-color: #f7f3f0; }
+
+.section-title-wrap {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-wrap h2 {
+  font-size: 2.8rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 15px;
+}
+
+.section-title-wrap h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: var(--accent);
+}
+
+/* --- Floating Buttons --- */
+.floating-actions {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1001;
+}
+
+.float-btn {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: var(--transition);
+}
+
+.btn-whatsapp { background: #25D366; }
+.btn-call { background: var(--primary); }
+
+.float-btn:hover {
+  transform: scale(1.1) rotate(5deg);
+  color: #fff;
+}
+
+/* --- Footer --- */
+.footer-v2 {
+  background: #1A1A1A;
+  color: #fff;
+  padding: 80px 0 30px;
+}
+
+.footer-v2 h4 { color: var(--accent); margin-bottom: 25px; }
+.footer-v2 .links li { list-style: none; margin-bottom: 12px; }
+.footer-v2 .links a { color: #BBB; transition: var(--transition); }
+.footer-v2 .links a:hover { color: var(--accent); padding-left: 5px; }
+
+/* --- Skeleton Loading --- */
+.skeleton {
+  background: #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: shine 1.5s linear infinite;
+}
+
+@keyframes shine {
+  to { background-position-x: -200%; }
+}
